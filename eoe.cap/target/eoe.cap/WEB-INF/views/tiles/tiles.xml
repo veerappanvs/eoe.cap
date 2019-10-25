@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+ 
+<tiles-definitions>  
+  
+   <!-- Template Definition -->
+   <definition name="template-def"
+       template="/WEB-INF/views/tiles/layouts/defaultLayout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="page" value="" cascade="true" />  
+       <put-attribute name="header" value="/WEB-INF/views/tiles/templates/defaultHeader.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/defaultMenu.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/views/tiles/templates/defaultFooter.jsp" />  
+   </definition>
+   
+   <definition name="cap-template-def"
+       template="/WEB-INF/views/tiles/layouts/capLayout.jsp">  
+       <put-attribute name="title" value="" />  
+       <put-attribute name="page" value="" cascade="true" />  
+       <put-attribute name="header" value="/WEB-INF/views/tiles/templates/defaultHeader.jsp" />  
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/defaultMenu.jsp" />  
+       <put-attribute name="body" value="" />  
+       <put-attribute name="footer" value="/WEB-INF/views/tiles/templates/defaultFooter.jsp" />  
+   </definition>  
+   
+   
+   
+   <!-- Main Page -->
+    <definition name=".capAdminHome" extends="cap-template-def">  
+       <put-attribute name="title" value="home" />
+       <put-attribute name="page" value="home" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/capAdminHome.jsp" />  
+   </definition>  
+   
+   <definition name=".capAdminCapCycles" extends="cap-template-def">  
+       <put-attribute name="title" value="home" />
+       <put-attribute name="page" value="home" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/capAdminHome2.jsp" />  
+   </definition> 
+   
+   <definition name=".home" extends="cap-template-def">  
+       <put-attribute name="title" value="home" />
+       <put-attribute name="page" value="home" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/home.jsp" />  
+   </definition> 
+   
+   <definition name=".managerHome" extends="cap-template-def">  
+       <put-attribute name="title" value="home" />
+       <put-attribute name="page" value="home" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/managerHome.jsp" />  
+   </definition> 
+   
+   <definition name=".psViewHome" extends="cap-template-def">  
+       <put-attribute name="title" value="home" />
+       <put-attribute name="page" value="home" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/psViewHome.jsp" />  
+   </definition>  
+  
+   <definition name=".step1form" extends="template-def">  
+       <put-attribute name="title" value="Start Cycle" />
+       <put-attribute name="page" value="startCycle" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/startcycleform1.jsp" />  
+   </definition>  
+   
+   <definition name=".step2form" extends="template-def">  
+       <put-attribute name="title" value="Start Cycle" /> 
+       <put-attribute name="page" value="startCycle" />   
+       <put-attribute name="body" value="/WEB-INF/views/pages/startcycleform2.jsp" />  
+   </definition>  
+   
+    <definition name=".step3form" extends="template-def">  
+       <put-attribute name="title" value="Start Cycle" />
+       <put-attribute name="page" value="startCycle" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/startcycleform3.jsp" />  
+   </definition>  
+   
+   
+    <definition name=".step4form" extends="template-def">  
+       <put-attribute name="title" value="Start Cycle" />  
+       <put-attribute name="page" value="startCycle" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/startcycleform4.jsp" />  
+   </definition>  
+   
+   <definition name=".step5form" extends="template-def">  
+       <put-attribute name="title" value="Start Cycle" />  
+       <put-attribute name="page" value="startCycle" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/startcycleform5.jsp" />  
+   </definition> 
+   
+   
+    <definition name=".editCycle" extends="template-def">  
+       <put-attribute name="title" value="CAP Cycle" />  
+       <put-attribute name="page" value="editCycle" />  
+        <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/editCycle.jsp" />  
+   </definition>
+   
+    <definition name=".editCycleView" extends="template-def">  
+       <put-attribute name="title" value="CAP Cycle" />  
+       <put-attribute name="page" value="editCycle" />  
+        <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/editCycleView.jsp" />  
+   </definition>
+   
+     <definition name=".editCycleTC" extends="template-def">  
+       <put-attribute name="title" value="CAP Cycle" />  
+       <put-attribute name="page" value="editCycle" />  
+        <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/editCycleTC.jsp" />  
+   </definition>
+   
+   <definition name=".editCycleCAM" extends="template-def">  
+       <put-attribute name="title" value="CAP Cycle" />  
+       <put-attribute name="page" value="editCycle" />  
+        <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/editCycleCAM.jsp" />  
+   </definition>
+   
+   
+    <definition name=".observation" extends="template-def">  
+       <put-attribute name="title" value="Observation" />  
+       <put-attribute name="page" value="Observation" />
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/observation.jsp" />  
+   </definition>  
+   
+   <definition name=".observationView" extends="template-def">  
+       <put-attribute name="title" value="Observation" />  
+       <put-attribute name="page" value="Observation" />
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/observationView.jsp" />  
+   </definition>
+   
+   <definition name=".observationCandidateView" extends="template-def">  
+       <put-attribute name="title" value="Observation" />  
+       <put-attribute name="page" value="Observation" />
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/observationCandidateView.jsp" />  
+   </definition>
+   
+   
+   
+   <definition name=".threewaymeeting" extends="template-def">  
+       <put-attribute name="title" value="Threeway Meeting" />  
+       <put-attribute name="page" value="observation" />
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/threewaymeeting.jsp" />  
+   </definition>
+   
+   <definition name=".threewaymeetingView" extends="template-def">  
+       <put-attribute name="title" value="Threeway Meeting" />  
+       <put-attribute name="page" value="observation" />
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/threewaymeetingView.jsp" />  
+   </definition>  
+   
+    <definition name=".assessmentFormative" extends="template-def">  
+       <put-attribute name="title" value="Formative Assessment" />  
+       <put-attribute name="page" value="Formative Assessment" />
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/assessmentFormative.jsp" />  
+   </definition>  
+   
+   <definition name=".assessmentFormativeView" extends="template-def">  
+       <put-attribute name="title" value="Formative Assessment" />  
+       <put-attribute name="page" value="Formative Assessment" />
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/assessmentFormativeView.jsp" />  
+   </definition>  
+ 
+   
+ 
+      <definition name=".assessmentSummative" extends="template-def">  
+       <put-attribute name="title" value="Summative Assessment" />  
+       <put-attribute name="page" value="Summative Assessment" />
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/assessmentSummative.jsp" />  
+   </definition> 
+   
+   
+      <definition name=".assessmentSummativeView" extends="template-def">  
+       <put-attribute name="title" value="Summative Assessment" />  
+       <put-attribute name="page" value="Summative Assessment" />
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/assessmentSummativeView.jsp" />  
+   </definition> 
+   
+   <definition name=".selfassessmentRubric" extends="template-def">  
+       <put-attribute name="title" value="Rubric Summary" />  
+       <put-attribute name="page" value="Rubric Summary" />
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/selfassessmentRubric.jsp" />  
+   </definition> 
+   
+    <definition name=".selfassessmentRubricManagerView" extends="template-def">  
+       <put-attribute name="title" value="Rubric Summary" />  
+       <put-attribute name="page" value="Rubric Summary" />
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/selfassessmentRubricManagerView.jsp" />  
+   </definition> 
+   
+   
+    <definition name=".selfassessmentRubricView" extends="template-def">  
+       <put-attribute name="title" value="Rubric Summary" />  
+       <put-attribute name="page" value="Rubric Summary" />
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/selfassessmentRubricView.jsp" />  
+   </definition> 
+   
+ <definition name=".selfassessment" extends="template-def">  
+       <put-attribute name="title" value="Self Assessment" />  
+       <put-attribute name="page" value="Self Assessment" />
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/selfassessment.jsp" />  
+   </definition>
+   
+   <definition name=".selfassessmentManagerView" extends="template-def">  
+       <put-attribute name="title" value="Self Assessment" />  
+       <put-attribute name="page" value="Self Assessment" />
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/selfassessmentManagerView.jsp" />  
+   </definition>  
+   
+   
+    <definition name=".prelimGoalSetting" extends="template-def">  
+       <put-attribute name="title" value="Self Assessment" />  
+       <put-attribute name="page" value="Self Assessment" />
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/prelimGoalSetting.jsp" />  
+   </definition> 
+   
+   <definition name=".prelimGoalSettingManagerView" extends="template-def">  
+       <put-attribute name="title" value="Self Assessment" />  
+       <put-attribute name="page" value="Self Assessment" />
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/prelimGoalSettingManagerView.jsp" />  
+   </definition> 
+   
+   <definition name=".assessmentGoalSummary" extends="template-def">  
+       <put-attribute name="title" value="Self Assessment" />  
+       <put-attribute name="page" value="Self Assessment" />
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/assessmentGoalSummary.jsp" />  
+   </definition> 
+   
+   <definition name=".assessmentGoalSummaryManagerView" extends="template-def">  
+       <put-attribute name="title" value="Self Assessment" />  
+       <put-attribute name="page" value="Self Assessment" />
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/assessmentGoalSummaryManagerView.jsp" />  
+   </definition> 
+   
+     <definition name=".finalizeGoalSetting" extends="template-def">  
+       <put-attribute name="title" value="Finalized Goal" />  
+       <put-attribute name="page" value="Finalized Goal" />
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/finalizeGoalSetting.jsp" />  
+   </definition> 
+   
+   <definition name=".finalizeGoalSettingView" extends="template-def">  
+       <put-attribute name="title" value="Finalized Goal" />  
+       <put-attribute name="page" value="Finalized Goal" />
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/finalizeGoalSettingView.jsp" />  
+   </definition> 
+   
+    <definition name=".uploadForm" extends="template-def">  
+       <put-attribute name="title" value="Upload Evidence File" />  
+       <put-attribute name="page" value="Upload Evidence File" />
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/uploadForm.jsp" />  
+   </definition> 
+   
+   <definition name=".annualReport" extends="template-def">  
+       <put-attribute name="title" value="home" />
+       <put-attribute name="page" value="home" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/annualReport.jsp" />  
+   </definition>
+   
+   <definition name=".annualReport2" extends="cap-template-def">  
+       <put-attribute name="title" value="Annual Reports" />
+       <put-attribute name="page" value="Annual Reports" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/annualReport2.jsp" />  
+   </definition>  
+   
+   <definition name=".messageForm" extends="template-def">  
+       <put-attribute name="title" value="Messages" />
+       <put-attribute name="page" value="Messages" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/messageForm.jsp" />  
+   </definition>  
+   
+   
+   <definition name=".announcementForm" extends="template-def">  
+       <put-attribute name="title" value="Announcement" />
+       <put-attribute name="page" value="Announcement" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/announcementForm.jsp" />  
+   </definition>  
+   
+                      
+   <definition name=".bulkUploadForm" extends="template-def">  
+       <put-attribute name="title" value="Upload Reports" />
+       <put-attribute name="page" value="Upload Reports" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/bulkUploadForm.jsp" />  
+   </definition>  
+   
+    <definition name=".importedCapInfo" extends="template-def">  
+       <put-attribute name="title" value="Imported Cycles" />
+       <put-attribute name="page" value="Imported Cycles" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/importedCapInfo.jsp" />  
+   </definition>  
+   
+   <definition name=".importedCapList" extends="cap-template-def">  
+       <put-attribute name="title" value="Imported Cycles" />
+       <put-attribute name="page" value="Imported Cycles" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/importedCapList.jsp" />  
+   </definition> 
+   
+   <definition name=".verifyCycle" extends="cap-template-def">  
+       <put-attribute name="title" value="Verify Cycle" />
+       <put-attribute name="page" value="Verify Cycle" />  
+       <put-attribute name="body" value="/WEB-INF/views/pages/verifyCycle.jsp" />  
+   </definition> 
+   
+      <definition name=".correspondenceHistory" extends="template-def">  
+       <put-attribute name="title" value="Correspondence History" />
+       <put-attribute name="page" value="Correspondence History" />  
+       <put-attribute name="menu" value="/WEB-INF/views/tiles/templates/cycleInfoMenu.jsp" />    
+       <put-attribute name="body" value="/WEB-INF/views/pages/correspondenceHistory.jsp" />  
+   </definition> 
+   
+   
+</tiles-definitions>
